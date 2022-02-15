@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="sass/style.css" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script defer src="js/random.js"></script>
+    <script defer src="js/auth.js"></script>
+    <script defer src="init.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Welcome to the Dashboard</h1>
+      <p class="text-center"><a href="#" class="logout">Log Out</a></p>
+    </div>
+    <br />
+    <div class="hero_container">
+      <nav>
+        <ul class="nav_links">
+          <li>
+            <button id="random">Random</button>
+          </li>
+          <li>
+            <button id="history">History</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <br />
+    <div class="container">
+      <form id="randomForm">
+        <label for="subreddit" class="label">Subreddit</label>
+        <input type="text" id="subreddit" class="input" />
+        <span class="error-message"></span>
+        <button id="searchButton" class="button">Search for image</button>
+      </form>
+      <div id="img_container"></div>
+    </div>
+  </body>
+</html>
